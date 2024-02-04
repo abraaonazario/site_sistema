@@ -18,11 +18,12 @@ from django.contrib import admin
 from django.conf import settings
 from django.urls import path, include # adicionar include
 from django.conf.urls.static import static
-from django.urls import path
+#from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('pages.urls')), # url do app
+    path('contas/', include('contas.urls')),
+    path('', include('pages.urls')), # url do app    
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
