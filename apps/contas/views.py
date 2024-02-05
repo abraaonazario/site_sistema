@@ -1,12 +1,12 @@
-from django.contrib import messages
 from django.contrib.auth.models import Group, User 
+from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from contas.permissions import grupo_colaborador_required
-from contas.forms import CustomUserCreationForm, UserChangeForm
-from django.shortcuts import get_object_or_404
 from contas.models import MyUser
+from contas.forms import CustomUserCreationForm, UserChangeForm
+
 
 
 def timeout_view(request):
