@@ -7,3 +7,51 @@
     width: 100%;
     object-fit: cover;
 }
+
+.card {
+    border: 1px solid #a5a5ff;
+    background-color: #e6e6fa;
+    max-width: 400px;
+    margin: 20px;
+}
+
+.card-row {
+    display: flex;
+}
+
+.card-body-left {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-body-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d6d6f5;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.card-value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-footer {
+    text-align: left;
+    font-size: 12px;
+    padding: 5px;
+    background-color: #f0f0ff;
+}

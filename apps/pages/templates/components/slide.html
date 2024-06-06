@@ -23,10 +23,9 @@
                 <div class="carousel-caption">
                     <div class="row align-items-center text-start" style="height: 600px;">
                         <div class="col-md-8 pt-5 mt-5">
-                            <span class="text-primary">{{slide.titulo_1}}</span>
+
                             <h1 class="mb-4">{{slide.titulo_2}}</h1>
-                            <p class="mb-4">{{slide.descricao_1}}</p>
-                            <p>{{slide.descricao_2}}</p> 
+
                             <p>
                                 {% if slide.titulo_botao_1 %}
                                 <a href="{% url ''|add:slide.rota_botao_1|add:'' %}" class="btn btn-primary py-3 px-4">{{slide.titulo_botao_1}}</a> 
